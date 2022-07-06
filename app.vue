@@ -11,6 +11,7 @@ onMounted(() => {
 <template>
     <div>
         <Head>
+            <Title>ivs-testing</Title>
             <Script src="https://player.live-video.net/1.11.0/amazon-ivs-player.min.js"></Script>
         </Head>
         <video id="video-player" autoplay playsinline class="video-js" style="width: 100vw; height: 56.25vw"></video>
