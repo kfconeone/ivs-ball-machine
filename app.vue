@@ -1,4 +1,5 @@
 <script setup>
+const date = ref(Date);
 onMounted(() => {
     if (IVSPlayer.isPlayerSupported) {
         const player = IVSPlayer.create();
@@ -14,6 +15,7 @@ onMounted(() => {
             <Title>ivs-testing</Title>
             <Script src="https://player.live-video.net/1.11.0/amazon-ivs-player.min.js"></Script>
         </Head>
+        <div style="position: fixed; right: 0; top: 0; color: aliceblue; font-size: 11px">SD</div>
         <video id="video-player" autoplay playsinline class="video-js" style="width: 100vw; height: 56.25vw"></video>
     </div>
 </template>
